@@ -321,6 +321,18 @@ form label:hover {
   background-position: center !important;
   justify-content: flex-end;
   padding: 2rem 9%;
+  position: relative;
+}
+
+.home .box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 .home .content {
